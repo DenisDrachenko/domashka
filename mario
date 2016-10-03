@@ -9,16 +9,18 @@ int main(void)
         printf("height: ");
         h = GetInt();
     }
-    while (h <= -1 || h > 25);
-    int i, j, k;
+    while (h <= -1 || h > 23);
+    int i;
+    int j;
+    int k;
     for(i = 0; i < h; i ++)
     {
-        for(j = h - 1; j > i; j --) // Draw spaces
+        for(j = h - 1; j > i; j --)
         {
             printf(" ");
         }
         printf("#");
-        for(k = 0; k < i; k ++) // Prints accumulated #
+        for(k = 0; k < i; k ++)
         {
             printf("#");
         }
