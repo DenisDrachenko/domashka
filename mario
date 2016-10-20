@@ -3,19 +3,19 @@
 
 int main(void)
 {
-    int h;
+    int height;
     do
     {
         printf("height: ");
-        h = GetInt();
+        height = GetInt();
     }
-    while (h <= -1 || h > 23);
+    while (height <= -1 || height > 23);
     int i;
     int j;
     int k;
-    for(i = 0; i < h; i ++)
+    for(i = 0; i < height; i ++)
     {
-        for(j = h - 1; j > i; j --)
+        for(j = height - 1; j > i; j --)
         {
             printf(" ");
         }
